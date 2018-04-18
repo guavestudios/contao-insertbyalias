@@ -1,6 +1,6 @@
 services:
-    contao_calendar.listener.insert_tags:
-        class: Contao\CalendarBundle\EventListener\InsertTagsListener
+    guave_insertbyalias.listener.insert_tags:
+        class: Guave\Insertbyalias\EventListener\InsertTagsListener
         arguments:
             - "@contao.framework"
         public: true

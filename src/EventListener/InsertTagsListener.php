@@ -52,7 +52,7 @@ class InsertTagsListener
 
           if (!empty($module)) {
             //careful, there can be multiple because its an collection
-            return $this->getFrontendModule($module[0], false);
+            return \Controller::getFrontendModule($module[0], false);
           }
           return 'Module not found: '.$elements[1];
         }

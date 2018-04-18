@@ -1,0 +1,6 @@
+services:
+    contao_calendar.listener.insert_tags:
+        class: Contao\CalendarBundle\EventListener\InsertTagsListener
+        arguments:
+            - "@contao.framework"
+        public: true

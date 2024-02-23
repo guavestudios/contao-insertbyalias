@@ -10,9 +10,9 @@
     }
   ],
   "require": {
-    "php": "^7.1",
-    "contao/core-bundle": ">=4.4 || <5.0",
-    "symfony/framework-bundle": "^3.4 || ^4.0"
+    "php": "^7.2|^8.0",
+    "contao/core-bundle": "^5.0",
+    "symfony/framework-bundle": "^5.0"
   },
   "conflict": {
     "contao/core": "*",
@@ -23,7 +23,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-4.6": "4.6.x-dev"
+      "dev-5.x": "5.x-dev"
     },
     "contao-manager-plugin": "Guave\\Insertbyalias\\ContaoManager\\Plugin"
   },

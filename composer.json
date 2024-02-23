@@ -10,9 +10,9 @@
     }
   ],
   "require": {
-    "php": "^7.2|^8.0",
+    "php": "^8.2",
     "contao/core-bundle": "^5.0",
-    "symfony/framework-bundle": "^5.0"
+    "symfony/framework-bundle": "^6.0"
   },
   "conflict": {
     "contao/core": "*",

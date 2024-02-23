@@ -1,0 +1,6 @@
+services:
+    guave_insertbyalias.listener.insert_tags:
+        class: Guave\Insertbyalias\EventListener\InsertTagsListener
+        arguments:
+            - "@contao.framework"
+        public: true

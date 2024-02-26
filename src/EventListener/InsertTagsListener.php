@@ -4,14 +4,14 @@
 namespace Guave\Insertbyalias\EventListener;
 
 use Contao\ModuleModel;
-use Contao\CoreBundle\Framework\ContaoFrameworkInterface;
+use Contao\CoreBundle\Framework\ContaoFramework;
 use Contao\Events;
 use Contao\StringUtil;
 
 class InsertTagsListener
 {
     /**
-     * @var ContaoFrameworkInterface
+     * @var ContaoFramework
      */
     private $framework;
 
@@ -23,9 +23,9 @@ class InsertTagsListener
     ];
 
     /**
-     * @param ContaoFrameworkInterface $framework
+     * @param ContaoFramework $framework
      */
-    public function __construct(ContaoFrameworkInterface $framework)
+    public function __construct(ContaoFramework $framework)
     {
         $this->framework = $framework;
     }

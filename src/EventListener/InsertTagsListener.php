@@ -1,12 +1,12 @@
 <?php
 
-
 namespace Guave\Insertbyalias\EventListener;
 
 use Contao\ModuleModel;
 use Contao\CoreBundle\Framework\ContaoFramework;
 use Contao\Events;
 use Contao\StringUtil;
+use Contao\Controller; // Add this line
 
 class InsertTagsListener
 {
@@ -52,7 +52,7 @@ class InsertTagsListener
 
           if (!empty($module)) {
             //careful, there can be multiple because its an collection
-            return \Controller::getFrontendModule($module[0], false);
+            return Controller::getFrontendModule($module[0], false); // Change this line
           }
           return 'Module not found: '.$elements[1];
         }
